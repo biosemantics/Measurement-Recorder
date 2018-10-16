@@ -1567,7 +1567,7 @@
                             console.log('headers', app.headers);
 
                             for (var i = 0; i < app.characters.length; i++) {
-                                if (app.characters[i][app.characters.length - 1].character_id == resp.data.character_id) {
+                                if (app.characters[i][app.characters[i].length - 1].character_id == resp.data.character_id) {
                                     for (var j = 0; j < app.headers.length; j++) {
                                         if (app.headers[j].id == resp.data.header_id) {
                                             if (item.value != '') {
